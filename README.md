@@ -30,10 +30,8 @@ npm run seed
 
 ### 3. Gotowe!
 
-Aplikacja jest dostępna pod adresami:
-
-* **Frontend:** http://localhost:3000
-* **Backend API:** http://localhost:4000
+Aplikacja jest dostępna pod adresem:
+http://localhost:3000
 
 * Aby uruchomić test integracyjny sprawdzający zabezpieczenie przed overbookingiem, wpisz w folderze backendu:*
 
