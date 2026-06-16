@@ -32,7 +32,7 @@ Baza danych uruchamia się jako pusta. Aby zsynchronizować strukturę i wgrać 
 
 ```bash
 npm install
-npx prismo generate
+npx prisma generate
 npx prisma db push
 npm run seed
 ```
