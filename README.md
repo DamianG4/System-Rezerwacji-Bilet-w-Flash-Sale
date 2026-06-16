@@ -21,9 +21,18 @@ docker compose up --build -d
 
 ### 2. Inicjalizacja bazy i wgranie danych (Seed)
 
-Baza danych uruchamia się jako pusta. Aby utworzyć tabele i wgrać początkowe wydarzenia testowe, otwórz nowy terminal, przejdź do folderu backendu i wykonaj:
+Baza danych uruchamia się jako pusta. Aby zsynchronizować strukturę i wgrać dane testowe, należy skonfigurować lokalne połączenie:
+
+1. W folderze `backend` utwórz plik o nazwie `.env` i wklej do niego poniższą zmienną:
+```env
+   DATABASE_URL="postgresql://postgres:password@localhost:5433/flash_sale"
+```
+
+2. Następnie otwórz nowy terminal w folderze backend i wykonaj kolejno polecenia:
 
 ```bash
+npm install
+npx prismo generate
 npx prisma db push
 npm run seed
 ```
