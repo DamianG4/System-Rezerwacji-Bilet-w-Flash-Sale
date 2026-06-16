@@ -37,7 +37,7 @@ npx prisma db push
 npm run seed
 ```
 
-### 3. Gotowe!
+### 3. Gotowe
 
 Aplikacja jest dostępna pod adresem:
 http://localhost:3000
