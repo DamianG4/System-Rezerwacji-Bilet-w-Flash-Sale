@@ -1,0 +1,18 @@
+### Test dzialania serwera
+GET http://localhost:4000/health
+
+### Rezerwacja biletu
+POST http://localhost:4000/reserve
+Content-Type: application/json
+
+{
+  "eventId": "0962e7bc-c548-4a0c-befb-8f3726c8e6a0"
+}
+
+### Oplacenie biletu
+POST http://localhost:4000/pay
+Content-Type: application/json
+
+{
+  "ticketId": "0efd3ab7-f246-46da-b10a-d0a1b0058e06"
+}
